@@ -29,8 +29,20 @@ describe("Megasoft", function() {
       it ("TWO wrong words given goo mrning returns // ~goo~ ~mrning~ ",function() {
         expect(megasoft.spellchecker("goo mrning")).toEqual("~goo~ ~mrning~");
       })
-      
+    })
 
+    describe('Spellchecker , Checks Three words', function() {
+
+      it ("given good morning returns // good morning ",function() {
+        expect(megasoft.spellchecker("good morning dog")).toEqual("good morning dog");
+      })
+
+      it ("given goo morning returns // ~goo~ morning ",function() {
+        expect(megasoft.spellchecker("goo morning do")).toEqual("~goo~ morning ~do~");
+      })
+      it ("TWO wrong words given goo mrning returns // ~goo~ ~mrning~ ",function() {
+        expect(megasoft.spellchecker("goo mrning dg")).toEqual("~goo~ ~mrning~ ~dg~");
+      })
     })
 
 });
