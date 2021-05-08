@@ -43,6 +43,16 @@ describe("Megasoft", function() {
       it ("TWO wrong words given goo mrning returns // ~goo~ ~mrning~ ",function() {
         expect(megasoft.spellchecker("goo mrning dg")).toEqual("~goo~ ~mrning~ ~dg~");
       })
+      
+    })
+
+    describe('Spellchecker, Punctuation checked', function() {
+
+      it (" Given dogg. // returns ~dogg~. ",function() {
+        expect(megasoft.spellchecker("dogg.")).toEqual("~dogg~.");
+      })
+
+     
     })
 
 });
