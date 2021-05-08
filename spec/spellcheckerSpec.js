@@ -56,6 +56,13 @@ describe("Megasoft", function() {
         expect(megasoft.spellchecker("morning?")).toEqual("morning?");
       })
 
+      it (" Given good morning dog! // returns  good morning dog!",function() {
+        expect(megasoft.spellchecker("good morning dog!")).toEqual("good morning dog!");
+      })
+      it (" Given good morning dog! // returns  good morning dog!",function() {
+        expect(megasoft.spellchecker("good mrning dog!")).toEqual("good ~mrning~ dog!");
+      })
+
      
     })
 
