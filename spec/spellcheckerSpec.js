@@ -22,8 +22,12 @@ describe("Megasoft", function() {
       it ("given good morning returns // good morning ",function() {
         expect(megasoft.spellchecker("good morning")).toEqual("good morning");
       })
+
       it ("given goo morning returns // ~goo~ morning ",function() {
         expect(megasoft.spellchecker("goo morning")).toEqual("~goo~ morning");
+      })
+      it ("TWO wrong words given goo mrning returns // ~goo~ ~mrning~ ",function() {
+        expect(megasoft.spellchecker("goo mrning")).toEqual("~goo~ ~mrning~");
       })
       
 
