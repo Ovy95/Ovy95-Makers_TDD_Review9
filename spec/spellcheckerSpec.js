@@ -8,8 +8,11 @@ describe("Megasoft", function() {
 
   describe('Spellchecker', function() {
 
-      it ("given dogg returns // dog ",function() {
+      it ("given dog returns // dog ",function() {
         expect(megasoft.spellchecker("dog")).toEqual("dog");
+      })
+      it ("given dogg returns // ~dogg~ ",function() {
+        expect(megasoft.spellchecker("dogg")).toEqual("~dogg~");
       })
 
       
