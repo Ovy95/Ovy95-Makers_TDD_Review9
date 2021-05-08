@@ -11,6 +11,7 @@ Takes in a sentance (String) then returns string values with highlighted errors 
   <!--  1st  -->
   "dogg"         || "~dogg~"
 <!-- 2nd  -->
+
 "These words are spnelt correclty"              "These words are ~spnelt~ ~correclty~"
 
 <!-- 3rd  -->
@@ -21,3 +22,6 @@ Edge Cases
 raise an argument  error if any data type is passed apart from a string 
 
 Spellchecker currently uses a bank of words to check against 
+
+[.?!]
+extras "" , '

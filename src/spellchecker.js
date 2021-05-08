@@ -1,8 +1,12 @@
 class Megasoft {
-
+  
    spellchecker(sentance) {
 
-    return "~dogg~"
+
+
+    return sentance
+
+
 
   }
 
