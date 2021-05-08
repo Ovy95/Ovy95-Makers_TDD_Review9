@@ -52,6 +52,10 @@ describe("Megasoft", function() {
         expect(megasoft.spellchecker("dogg.")).toEqual("~dogg~.");
       })
 
+      it (" Given morning? // returns morning?",function() {
+        expect(megasoft.spellchecker("morning?")).toEqual("morning?");
+      })
+
      
     })
 

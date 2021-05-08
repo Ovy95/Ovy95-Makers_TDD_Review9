@@ -20,8 +20,11 @@ class Megasoft {
 
       if ( wordBank.includes(sentanceArray[index]) === false){
         sentanceArray[index] = '~'+sentanceArray[index]+'~'+ add
-      } 
-      
+      } else {
+        sentanceArray[index] = sentanceArray[index]+add
+
+      }
+
   
     }
    let checkCompleted = sentanceArray.join(' ')
